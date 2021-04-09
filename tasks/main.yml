@@ -1,5 +1,11 @@
 ---
 # tasks file for ansible-droidcam
+- name: Create droidcam folder
+  ansible.builtin.file:
+    path: /opt/droidcam
+    state: directory
+    mode: '0755'
+
 - name: Get and Unarchive Executable
   ansible.builtin.unarchive:
     src: https://files.dev47apps.net/linux/droidcam_latest.zip
