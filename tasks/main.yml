@@ -7,6 +7,6 @@
     remote_src: yes
 
 - name: Execute installer
-  ansible.builtin.script: "install-client"
+  script: "install-client"
   args:
     chdir: /opt/droidcam/
