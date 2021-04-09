@@ -13,6 +13,6 @@
     remote_src: yes
 
 - name: Execute installer
-  shell: "install-client"
+  shell: "/opt/droidcam/install-client"
   args:
     chdir: /opt/droidcam/
