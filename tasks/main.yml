@@ -6,6 +6,8 @@
     dest: /opt/droidcam
     remote_src: yes
 
-- name: Execute the command in remote shell; stdout goes to the specified file on the remote
-  ansible.builtin.shell: /opt/droidcam/install-client
+- name: Execute installer
+  ansible.builtin.shell: install-client
+  args:
+    chdir: /opt/droidcam/
 
