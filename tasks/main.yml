@@ -16,3 +16,8 @@
   shell: "/opt/droidcam/install-client"
   args:
     chdir: /opt/droidcam/
+
+- name: Execute V4L2 Loopback installer via DKMS
+  shell: "/opt/droidcam/install-dkms"
+  args:
+    chdir: /opt/droidcam/
